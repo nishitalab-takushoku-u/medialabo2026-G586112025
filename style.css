@@ -1,0 +1,46 @@
+body{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #efefef;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: white;
+    background-color: #454596;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 2px 2px navy;
+}
+
+h2{
+    border-left: solid 8px #3f3faf;
+    padding-left: 10px;
+    color: darkslategray;
+}
+
+.section{
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.link {
+    display: inline-block;
+    background-color: pink;
+    padding: 8px 12px;
+    margin-top: auto;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.grid > div {
+    background-color: #ffefaf;
+    padding: 10px;
+    height: 200px;
+}

@@ -21,7 +21,6 @@ h2 {
 
 div#zentai {
 	display: grid;
-	flex-direction: row;
 	width: 1024px;
 	grid-template-columns: 1fr 1fr;
 	gap: 10px;

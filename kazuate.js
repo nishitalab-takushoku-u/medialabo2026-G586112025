@@ -20,6 +20,9 @@ function hantei() {
   // ここから: テキストボックスに指定された数値を yoso に代入する
   let input = document.querySelector('input[name="yoso"]');
   let yoso = Number(input.value);
+
+  let y = document.querySelector('span#yosokekka');
+  y.textContent = yoso;
   // ここまで: テキストボックスに指定された数値を yoso に代入する
   
   // ここから: 正解判定する

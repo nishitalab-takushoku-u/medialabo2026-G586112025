@@ -16,10 +16,60 @@ let gakka = [
 
 //////////////// ここから下にプログラムを書きたそう!
 
-console.log(campus.address);
-for (let building of campus.buildingD) {
-	console.log(building);
+function print(data) {
+
+	console.log(data.address);
+
+	for (let building of data.buildingD) {
+		console.log(building);
+	}
 }
-for (let department of gakka) {
-	console.log(department.name);
+
+// ページ表示
+function printDom(data) {
+
+	// すでに result があれば削除
+	let old = document.querySelector('#result');
+
+	if (old != null) {
+		old.remove();
+	}
+
+	// div 要素作成
+	let div = document.createElement('div');
+
+	// id 属性設定
+	div.setAttribute('id', 'result');
+
+	// body の最後に追加
+	document.body.insertAdjacentElement('beforeend', div);
+
+	// 住所表示
+	let p = document.createElement('p');
+
+	p.textContent = '住所: ' + data.address;
+
+	div.insertAdjacentElement('beforeend', p);
+
+	// タイトル
+	let h2 = document.createElement('h2');
+
+	h2.textContent = '建物一覧';
+
+	div.insertAdjacentElement('beforeend', h2);
+
+	// ul 作成
+	let ul = document.createElement('ul');
+
+	// 建物表示
+	for (let building of data.buildingD) {
+
+		let li = document.createElement('li');
+
+		li.textContent = building;
+
+		ul.insertAdjacentElement('beforeend', li);
+	}
+
+	div.insertAdjacentElement('beforeend', ul);
 }

@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>グルメ情報</title>
 	<link rel="stylesheet" href="project.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
 	<script src="gourmet.js" defer></script>
   </head>
   <body>
@@ -12,89 +13,9 @@
 		グルメ情報
 	</h1>
 	<h2>
-		<span id="count">0</span>つの飲食店の情報を検索できます！
+		<span id="count"></span>
 	</h2>
-	<!-- <div id="con">
-		<div class="shop">
-			<h3>店舗名:
-			<ruby>
-				猿乃拳<rt>モンキーパンチ</rt>
-			</ruby>
-			<img src="pircture\gurume１.jpg" width="100" alt="猿乃拳の外観写真" class="photo">
-		</h3>
-		<p>
-			<strong>住所：</strong>東京都国分寺市本町4-1-10 国分寺シティハイツ B1F
-		</p>
-		<p>
-			<strong>予算：</strong>
-			<img src="pircture/moon.png" width="20">：￥4,000～￥4,999
-			<img src="pircture/sun.png " width="20">：￥2,000～￥2,999
-		</p>
-		<p>
-			<strong>アクセス：</strong>国分寺駅北口徒歩３分
-		</p>
-		<p>
-			<strong>ジャンル：</strong>居酒屋
-		</p>
-		<p>
-			<strong>キャッチコピー：</strong>2時間半以上の宴会可、お祝い・サプライズ可
-		</p>
-		<p>
-			<strong>営業時間：</strong>月・火・水・木・金
-			<br>17:30 - 23:00
-			<br>土・日・祝日
-			<br>13:00 - 23:00
-		</p>
-		<p>
-			<strong>最寄駅：</strong>国分寺駅
-		</p>
-		<p>
-			<strong>サブジャンル：</strong>海鮮、鍋
-		</p>
-		</div>
-		<div class="shop">
-			<h3>
-				店舗名:
-				<ruby>
-					酒肴庵 国分寺 恵比寿屋本店<rt>しゅこうあんこくぶんじ えびすや</rt>
-				</ruby>
-				<img src="pircture\gurume２.jpg" width="100" alt="酒肴庵の外観写真" class="photo">
-			</h3>
-			<p>
-				<strong>住所：</strong>東京都国分寺市本町3-6-12 ＦＬＡＴ瀬村　１Ｆ
-			</p>
-			<p>
-				<strong>予算：</strong>
-				<img src="pircture/moon.png" width="20">：￥5,000～￥5,999　
-			</p>
-			<p>
-				<strong>アクセス：</strong>西武国分寺線国分寺駅北口より徒歩2分
-				<br>西武多摩湖線国分寺駅北口より徒歩2分
-				<br>中央線国分寺駅北口より徒歩3分
-			</p>
-			<p>
-				<strong>ジャンル：</strong>居酒屋
-			</p>
-			<p>
-			<strong>キャッチコピー：</strong>2時間半以上の宴会可、お祝い・サプライズ可（バースデープレート）、ドリンク持込可
-		</p>
-			<p>
-				<strong>営業時間：</strong>月・火・水・木・金・土
-				<br>17:00 - 19:30
-				<br>19:30 - 22:00
-				<br>22:00 - 05:00
-				<br>日
-				<br>17:00 - 19:30
-				<br>19:30 - 00:00
-			</p>
-			<p>
-				<strong>最寄駅：</strong>国分寺駅
-			</p>
-			<p>
-			<strong>サブジャンル：</strong>鍋、海鮮
-		</p>
-		</div> -->
-		<button id="search">検索</button>
-	</div>
+	<input id="keyword" type = 'text' size = '30'>
+	<button id="search">検索</button>
   </body>
 </html>
